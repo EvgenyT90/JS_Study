@@ -4,12 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
-    <div id="air-pollution">
-        <table id="body">
+    <style>
+        #canvas {
+          border: 1px solid black;
+        }
+      </style>
+    <div id="air-pollution" style=" position: absolute; width: 48%; left: 10px;">
+        <table id="body" style="width: 100%;">
             
         </table>
+    </div>
+    <div style=" position: absolute; width: 50%; bottom: 50%; right: 0px;">
+        <canvas id="myChart"></canvas>            
+    </div>
+    <div style=" position: absolute; width: 50%; top: 55%; right: 0px;">
+        <canvas width="700" height="300" id="canvas"></canvas>
+        dfdf
     </div>
     <script src="scripts.js"></script>
 </body>
