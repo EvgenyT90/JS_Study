@@ -1,29 +1,24 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-</head>
-<body>
-    <style>
-        #canvas {
-          border: 1px solid black;
-        }
-      </style>
-    <div id="air-pollution" style=" position: absolute; width: 48%; left: 10px;">
-        <table id="body" style="width: 100%;">
-            
-        </table>
+  </head>
+  <body>
+    <div>
+      <label>Конвертаця температуры: </label>
+      <select id="unit-select">
+        <option value="Celsius">Цельсии</option>
+        <option value="Fahrenheit">Фаренгейты</option>
+      </select>
+      <input type="text" id="temperature-input" />
     </div>
-    <div style=" position: absolute; width: 50%; bottom: 50%; right: 0px;">
-        <canvas id="myChart"></canvas>            
+    <div>
+      <label>Результат вычисления: </label>
+      <span id="result"></span>
     </div>
-    <div style=" position: absolute; width: 50%; top: 55%; right: 0px;">
-        <canvas width="700" height="300" id="canvas"></canvas>
-        dfdf
-    </div>
+
     <script src="scripts.js"></script>
-</body>
+  </body>
 </html>
