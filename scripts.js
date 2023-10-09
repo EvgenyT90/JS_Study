@@ -1,4 +1,7 @@
 function convertTemperature(value, unit) {
+  if (Number.isNaN(value)) {
+    return 0;
+  }
   if (unit === "Celsius") {
     return (value * 9) / 5 + 32;
   } else if (unit === "Fahrenheit") {
